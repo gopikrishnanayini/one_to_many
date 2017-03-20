@@ -1,8 +1,9 @@
+<div class="container-fluid">
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Teachers</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Name</th>
@@ -13,19 +14,19 @@
 
   <tbody>
     <% @teachers.each do |teacher| %>
-      <tr>
-        <td><%= teacher.name %></td>
-        <td><%= teacher.age %></td>
-        <td><%= link_to 'Show', teacher %></td>
-        <td><%= link_to 'Edit', edit_teacher_path(teacher) %></td>
-        <td><%= link_to 'Destroy', teacher, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </td>
-        <td><%= link_to 'Student new', new_teacher_student_path(teacher) %></td>
-      </tr>
+    <tr>
+    <td><%= teacher.name %></td>
+    <td><%= teacher.age %></td>
+    <td><%= link_to 'Show', teacher %></td>
+    <td><%= link_to 'Edit', edit_teacher_path(teacher) %></td>
+    <td><%= link_to 'Destroy', teacher, method: :delete, data: { confirm: 'Are you sure?' }%></td>
+    <td><%= link_to 'Student new', new_teacher_student_path(teacher) %></td>
+    </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Teacher', new_teacher_path %>
+<%= link_to 'New Teacher', new_teacher_path ,:class=>"btn btn-primary" %>
+<div>

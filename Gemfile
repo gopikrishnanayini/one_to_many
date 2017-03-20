@@ -29,7 +29,9 @@ gem 'pry-byebug'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem "less-rails"
+gem 'twitter-bootstrap-rails'
+gem 'autoprefixer-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
