@@ -28,7 +28,14 @@ gem 'pry-byebug'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use Unicorn as the app server
+gem 'devise'
+gem "less-rails"
+gem 'twitter-bootstrap-rails'
+gem 'autoprefixer-rails'
+gem 'activeadmin', github: 'activeadmin'
+gem 'has_scope', '~> 0.6.0'
 # gem 'unicorn'
+gem 'sprockets', '3.6.3'
 gem "less-rails"
 gem 'twitter-bootstrap-rails'
 gem 'autoprefixer-rails'
